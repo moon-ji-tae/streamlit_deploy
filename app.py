@@ -183,4 +183,6 @@ chart_title = choices[st.session_state['code_index'] ]
 st.markdown(f'<h3 style="text-align: center; color: red;">{chart_title}</h3>', unsafe_allow_html=True)
 plotChart(df, st.session_state['pred_ndays'])
 
+st.dataframe(df.tail(ndays))
+
 
